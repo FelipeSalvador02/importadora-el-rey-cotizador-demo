@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es-EC">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Importadora El Rey · Fiestas, regalos y disfraces en Quito</title>
+  <meta name="description" content="Fiestas, regalos, disfraces y hogar en Quito. Cuéntanos qué necesitas y solicita una cotización por WhatsApp a Importadora El Rey.">
+  <!-- Demo comercial privada: no indexar -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fff8f1">
+  <link rel="icon" href="img/corona-el-rey.png" type="image/png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__fila envoltura">
+      <a class="marca" href="#inicio" aria-label="Importadora El Rey, inicio">
+        <img class="marca__corona" src="img/corona-el-rey.png" alt="" aria-hidden="true" width="199" height="120">
+        <span class="marca__texto"><span class="marca__linea">Importadora</span><span class="marca__nombre">El Rey</span></span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <a href="#ocasiones">Ocasiones</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#inspiracion">Inspiración</a>
+        <a class="menu__cotizar" href="#cotizar">Cotizar</a>
+      </nav>
+      <div class="cabecera__acciones">
+        <a class="icono-wa" data-wa="general" href="#" aria-label="Escríbenos por WhatsApp">
+          <svg aria-hidden="true" viewBox="0 0 32 32" width="22" height="22"><path fill="currentColor" d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.3 28.8l6.6-1.7A12.7 12.7 0 1 0 16 3.2Zm0 23.2c-2 0-3.9-.5-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.5 10.5 0 1 1 16 26.4Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.6 8.6 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4Z"/></svg>
+        </a>
+        <a class="boton boton--coral boton--cabecera" href="#cotizar" aria-label="Solicitar cotización"><span class="txt-largo" aria-hidden="true">Solicitar cotización</span><span class="txt-corto" aria-hidden="true">Cotizar</span><span class="contador-solicitud" id="contador-solicitud" hidden></span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="hero envoltura" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__texto">
+        <h1 id="hero-titulo">Cuéntanos qué necesitas para tu próxima celebración</h1>
+        <p class="hero__bajada">Fiestas, regalos, disfraces y hogar con atención personalizada. Describe lo que buscas y te enviamos una cotización por WhatsApp.</p>
+        <div class="hero__acciones">
+          <a class="boton boton--coral" href="#cotizar">Solicitar cotización</a>
+          <a class="boton boton--suave" href="#categorias">Explorar categorías</a>
+        </div>
+        <ul class="hero__datos" role="list">
+          <li><span class="punto punto--menta" aria-hidden="true"></span>Más de 40 años en el mercado</li>
+          <li><span class="punto punto--azul" aria-hidden="true"></span>Atención directa por WhatsApp</li>
+        </ul>
+      </div>
+      <div class="hero__collage" aria-hidden="false">
+        <span class="mancha mancha--lavanda" aria-hidden="true"></span>
+        <span class="mancha mancha--crema" aria-hidden="true"></span>
+        <figure class="foto foto--grande">
+          <picture><source type="image/webp" srcset="img/tienda-interior.webp"><img src="img/tienda-interior.jpg" alt="Interior de la tienda con pared de flores artificiales, balones, cascos y vitrinas de accesorios" width="737" height="895" fetchpriority="high"></picture>
+        </figure>
+        <figure class="foto foto--pequena">
+          <picture><source type="image/webp" srcset="img/letrero-entrada.webp"><img src="img/letrero-entrada.jpg" alt="Letrero de la entrada de El Rey Importadora con corona dorada y globos rojos" width="415" height="372"></picture>
+        </figure>
+        <div class="globo-wa" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="20" height="20"><path fill="currentColor" d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.3 28.8l6.6-1.7A12.7 12.7 0 1 0 16 3.2Z"/></svg>
+          <span>Te cotizamos por WhatsApp</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion envoltura" id="ocasiones" aria-labelledby="ocasiones-titulo">
+      <div class="seccion__cabecera">
+        <h2 id="ocasiones-titulo">Explora opciones para tu ocasión</h2>
+        <p>Elige qué vas a celebrar y te ayudamos a encontrar lo que necesitas.</p>
+      </div>
+      <div class="carrusel" id="carrusel-ocasiones">
+        <ul class="ocasiones" id="lista-ocasiones" role="list"></ul>
+      </div>
+      <div class="puntos" id="puntos-ocasiones" aria-hidden="true"></div>
+    </section>
+
+    <section class="seccion envoltura" id="categorias" aria-labelledby="categorias-titulo">
+      <div class="seccion__cabecera">
+        <h2 id="categorias-titulo">Lo que encuentras en El Rey</h2>
+        <p>Una oferta amplia que cambia con cada temporada. Estas son nuestras líneas principales.</p>
+      </div>
+      <ul class="categorias" id="lista-categorias" role="list"></ul>
+    </section>
+
+    <section class="seccion envoltura" id="inspiracion" aria-labelledby="inspiracion-titulo">
+      <div class="seccion__cabecera seccion__cabecera--fila">
+        <div>
+          <h2 id="inspiracion-titulo">Ideas para inspirarte</h2>
+          <p>Ejemplos de artículos que puedes incluir en tu solicitud. Tenemos muchas más opciones en tienda.</p>
+        </div>
+      </div>
+      <ul class="inspiracion" id="lista-inspiracion" role="list"></ul>
+    </section>
+
+    <section class="cotizador-zona" id="cotizar" aria-labelledby="cotizar-titulo">
+      <div class="envoltura cotizador">
+        <div class="cotizador__intro">
+          <h2 id="cotizar-titulo">Prepara tu solicitud</h2>
+          <p>En cuatro pasos cortos. Solo la ocasión y lo que buscas son necesarios; lo demás es opcional.</p>
+          <p class="cotizador__aviso">La disponibilidad y el precio se confirman por WhatsApp.</p>
+        </div>
+        <div class="cotizador__panel">
+          <ol class="pasos" id="pasos" aria-label="Pasos de la solicitud"></ol>
+          <div class="tarjeta-paso" id="tarjeta-paso" tabindex="-1"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="envoltura pie__contenido">
+      <div class="marca marca--pie">
+        <img class="marca__corona" src="img/corona-el-rey.png" alt="" aria-hidden="true" width="199" height="120">
+        <span class="marca__texto"><span class="marca__linea">Importadora</span><span class="marca__nombre">El Rey</span></span>
+      </div>
+      <p>Quito, Ecuador</p>
+      <p>WhatsApp: <a data-wa="general" href="#">096 373 6626</a></p>
+      <p class="pie__credito">Propuesta de diseño elaborada por Soluciones Digitales</p>
+    </div>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
